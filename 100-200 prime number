@@ -4,12 +4,12 @@ main()
    int j,i;
  for(j=100;j<201;j++)
 {
-   int b=0;
+   int b=0;//重置上一个数产生的计数值
    for(i=2;i<j;i++)
  
      {
-         if(j%i==0)
-        {b++;}
+         if(j%i==0)//判断能否整除
+        {b++;}//满足条件计数
      }
      if(b==0)
         printf("the prime number is %d\n",j);
